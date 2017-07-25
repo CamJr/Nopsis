@@ -1,0 +1,121 @@
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="../assets/img/banner.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="../assets/img/banner2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="../assets/img/banner.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="../assets/img/banner.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+<div ng-repeat="slider in vm.youtube" class="BlockYoutube">
+
+  <h1 class="{{slider.textColor}}"><i class="fa fa-{{slider.icon}} fa-1x" aria-hidden="true"></i>{{slider.title}}</h1>
+<div class="black">
+<br>
+  <div class="carousel test {{slider.icon}}">
+    <a  class="carousel-item" href=""><img ng-src="{{slider.img1}}"><h4 class="center">{{slider.img1Text}}</h4></a>
+    <a  class="carousel-item" href=""><img ng-src="{{slider.img2}}"><h4 class="center">{{slider.img2Text}}</h4></a>
+    <a  class="carousel-item" href=""><img ng-src="{{slider.img3}}"><h4 class="center">{{slider.img3Text}}</h4></a>
+    <a  class="carousel-item" href=""><img ng-src="{{slider.img4}}"><h4 class="center">{{slider.img4Text}}</h4></a>
+    <a  class="carousel-item" href=""><img ng-src="{{slider.img5}}"><h4 class="center">{{slider.img5Text}}</h4></a>
+  </div>
+</div>
+</div>
+
+
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $('.slider').slider();
+  $('.carousel').carousel({
+       dist:0,
+       shift:0,
+       padding:20,
+  });
+
+  // setInterval(function() {
+  //   $('.carousel.youtube-play').carousel('next');
+  // }, 2000);
+  //
+  // setInterval(function() {
+  //   $('.carousel.code').carousel('prev');
+  // }, 1800);
+  //
+  // setInterval(function() {
+  //   $('.carousel.book').carousel('next');
+  // }, 2100);
+   });
+</script>
+
+
+<!--
+<div  class="text-center container">
+  <h1>Voulez-vous travailler sur quelque chose?</h1>
+  <div class="row">
+    <div ng-repeat='iconWork in vm.icon' class="col-sm-2">
+      <i class="fa fa-{{iconWork.logo}} fa-5x" aria-hidden="true"></i><br>
+      <p>{{iconWork.text}}</p>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+<div class="container">
+  <h1 class="text-center">Nous faisons toutes sortes d'art et de médias ensemble
+</h1>
+
+  <div ng-repeat='card in vm.image' class="col-lg-3 col-md-4 col-sm-6 col-xs-12 block">
+    <div class="hovereffect">
+      <img class="img-responsive" ng-src="{{card.img}}" alt="">
+      <div class="overlay">
+        <h2>{{card.title}}</h2>
+        <a class="info" href="{{card.link}}">Voir plus</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+<div class="text-center greenColorGradiant">
+  <h1>Current Productions</h1>
+  <h2>These projects are already set up to be distributed, published, or otherwise monetized.<br>
+But we’re still working on them, so come contribute!</h2>
+</div>
+
+<div ng-repeat='bg in vm.banner'>
+  <div class="hovereffectBlock">
+    <img class="carousel-inner" ng-src="{{bg.img}}" alt="{{bg.img}}">
+    <div class="overlayBlock info">
+      <a class="info">{{bg.desc}}</a><br>
+      <a href="#"></a><button src="{{bg.link}}" type="button" name="button">Lien</button>
+    </div>
+  </div>
+</div> -->
