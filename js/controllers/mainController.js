@@ -1,4 +1,20 @@
-      function mainController() {
+      function mainController($routeParams, $location) {
+
+        this.$location = $location;
+        this.$routeParams = $routeParams;
+
+        this.query = $routeParams.query;
+        this.newSearch = (query) => {
+          if (query != '') {
+            $location.path("/program/" + query);
+          }
+        };
+
+        this.newSearch = (query) => {
+          if (query != '') {
+            $location.path("/program/" + query);
+          }
+        };
 
 this.youtube = [{
   textColor : "red-text",
@@ -6,14 +22,32 @@ this.youtube = [{
   title : " YOUTUBE",
   img1 : "../../assets/img/nopsisNetwork.jpg",
   img1Text: "Nopsis Network",
+  img1Href: "",
+  img1Bio: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+
   img2 : "../../assets/img/nopsisNews.jpg",
   img2Text: "Nopsis News",
+  img2Href: "",
+  img2Bio: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+
+
   img3 : "../../assets/img/nopsisWrestling.jpg",
   img3Text: "Nopsis Wrestling",
+  img3Href: "",
+  img3Bio: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+
+
   img4 : "../../assets/img/vlog.jpg",
   img4Text: "CamJr Blog",
+  img4Href: "",
+  img4Bio: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+
+
   img5 : "../../assets/img/cdp.jpg",
   img5Text: "CDP",
+  img5Href: "",
+  img5Bio: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+
 },{
   textColor : "blue-text",
   icon : "code",

@@ -1,0 +1,42 @@
+<h1 class="center text">test</h1>
+
+
+
+<div class="row">
+  <div class="card in vm.program" id="{{card.id}}"  class="col s3 ">
+    <div class="card">
+      <div class="card-image">
+        <a href="{{card.img}}"><img ng-src="{{card.img}}"></a>
+      </div>
+    </div>
+    <div class="card-content">
+      <span class="card-title">{{card.imgText}}</span>
+      <p>{{card.imgBio}}</p>
+    </div>
+    <div class="card-action">
+      <a href="/#/pageProgram/{{card.id}}">Lien</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- <div class="row">
+  <div ng-repeat="card in vm.program" class="col s3 ">
+    <div class="card">
+      <div class="card-image">
+        <a href="{{card.img}}"><img ng-src="{{card.img}}"></a>
+      </div>
+      <div class="card-content">
+        <span class="card-title">{{card.imgText}}</span>
+        <p>{{card.imgBio}}</p>
+      </div>
+      <div class="card-action">
+        <a href="/#/pageProgram{{card.id}}">Lien</a>
+      </div>
+    </div>
+  </div>
+</div> -->
