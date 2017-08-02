@@ -10,5 +10,5 @@
 
 ## Development
 
-run python -m SimpleHTTPServer on Linux environnement
-run python3 -m http.server 8000 on Windows environnement
+-   run python -m SimpleHTTPServer on Linux environnement
+-   run python3 -m http.server 8000 on Windows environnement
