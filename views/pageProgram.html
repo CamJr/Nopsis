@@ -1,20 +1,18 @@
 <h1 class="center text">test</h1>
 
-
-
 <div class="row">
   <div class="card in vm.program" id="{{card.id}}"  class="col s3 ">
     <div class="card">
       <div class="card-image">
-        <a href="{{card.img}}"><img ng-src="{{card.img}}"></a>
+        <a href="{{vm.pageProgram.img}}"><img ng-src="{{vm.pageProgram.img}}"></a>
       </div>
     </div>
     <div class="card-content">
-      <span class="card-title">{{card.imgText}}</span>
-      <p>{{card.imgBio}}</p>
+      <span class="card-title">{{vm.pageProgram.imgText}}</span>
+      <p>{{vm.pageProgram.imgBio}}</p>
     </div>
     <div class="card-action">
-      <a href="/#/pageProgram/{{card.id}}">Lien</a>
+      <a href="/#/pageProgram/{{vm.pageProgram.id}}">Lien</a>
     </div>
   </div>
 </div>

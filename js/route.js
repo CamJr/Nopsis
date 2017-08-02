@@ -19,7 +19,7 @@ const routes = ($routeProvider, $httpProvider, $locationProvider) => {
         })
         .when('/pageProgram/:id' , {
             templateUrl: 'views/pageProgram.html',
-            controller: 'programController',
+            controller: 'pageProgramController',
             controllerAs: 'vm'
         })
         .when('/contact', {

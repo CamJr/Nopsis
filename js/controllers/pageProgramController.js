@@ -1,4 +1,14 @@
-function programController() {
+function pageProgramController($routeParams, $location) {
+
+  this.$location = $location;
+  this.$routeParams = $routeParams;
+
+  console.log(this.$location.path());
+  console.log(this.$routeParams);
+  console.log(this.$routeParams.id);
+
+  this.index = this.$routeParams.id-1;
+  console.log(this.index);
 
   this.program = [{
     id: 1,
@@ -58,6 +68,7 @@ function programController() {
     imgBio: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
   }];
 
-
+  this.pageProgram = this.program[this.index];
+  console.log(this.pageProgram);
 
 }
