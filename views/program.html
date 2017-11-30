@@ -1,14 +1,25 @@
-<h1 class="center text">Programme</h1>
+<h1 class="center text">PROGRAMME</h1>
+
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field container">
+        <i class="material-icons prefix">&#xE8B6;</i>
+        <input ng-model="searchText" type="text" class="form-control" placeholder="Recherche">
+      </div>
+    </div>
+  </form>
+</div>
 
 
 <div class="row">
-  <div ng-repeat="card in vm.program" id="{{ 'program-' + card.id }}" class="col s3 ">
+  <div ng-repeat="card in vm.card  | filter:searchText" id="{{ 'program-' + card.id }}" class="col s3">
     <div class="card">
       <div class="card-image">
-        <a href="{{card.img}}"><img ng-src="{{card.img}}"></a>
+        <a ng-href="/#/pageProgram/{{card.id}}"><img ng-src="{{card.img}}"></a>
       </div>
       <div class="card-content">
-        <span class="card-title">{{card.imgText}}</span>
+        <span class="card-title">{{card.title}}</span>&nbsp;<p class="chip right">{{card.tag}}</i></p>
         <p>{{card.imgBio}}</p>
       </div>
       <div class="card-action">

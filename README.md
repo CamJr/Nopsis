@@ -1,4 +1,4 @@
-# Site Web Camjr
+# Nopsis Network ©
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
@@ -10,5 +10,9 @@
 
 ## Development
 
+```
+git clone https://github.com/camjr/nopsis
 run python -m SimpleHTTPServer on Linux environnement
 run python3 -m http.server 8000 on Windows environnement
+```
+

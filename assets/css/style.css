@@ -12,12 +12,24 @@ main {
 
 /*Size*/
 
+h1, h2, h3, h4, h5, h6{
+  font-family: Roboto thin;
+  text-transform: uppercase;
+}
+
 .responsive70{
   width: 70%
 }
 .responsive20{
   width: 18%
 }
+.responsive10{
+  width: 10%
+}
+.responsive5{
+  width: 5%
+}
+
 /*Color*/
 
 .blueColor, footer.page-footer{
@@ -28,12 +40,60 @@ main {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
+
+.bleu-text{
+  color: #082135!important;
+}
+
 .carousel .carousel-item {
     display: none;
     width: 380px;
-    /* height: 352px; */
     position: absolute;
     top: 0;
     left: 0;
     margin-top: 65px;
+}
+
+/* MAIN*/
+
+.netFlux{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
+ul.slides{
+  height: 850px!important;
+}
+
+div.slider.ng-scope{
+  height: 890px!important;
+}
+/*Footer*/
+
+.socialMargin{
+margin-bottom: 5px;
+}
+
+/*CONTACT*/
+.contactWhork{
+  margin-top: 10%;
+}
+
+.fa-linkedin-square{
+color:  #0077B5;
+}
+.fa-facebook-square{
+color:  #3B5998
+}
+
+.fa-github{
+color:  black;
+}
+
+.fa-instagram {
+    background-image: -webkit-linear-gradient(bottom left, #FFD521, #EB001E, #B900B4); /* For Chrome and Safari */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }

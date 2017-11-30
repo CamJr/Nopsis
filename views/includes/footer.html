@@ -1,28 +1,72 @@
 <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Liens</h5>
-              <div class="nav-wrapper">
-                <div  class="col s12">
-                  <a ng-repeat='contact in vm.info' href="{{contact.link}}" target="_blank">
-                    <i href="{{contact.link}}" class="fa fa-{{contact.logo}} fa-2x" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </nav>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div class="container">
-            Copyright © 2017 NOPSIS Network
+  <div class="container">
+    <div class="row">
+      <div class="col l4 s12">
+        <h5 class="white-text">Footer</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 s12 center">
+        <h5 class="white-text">Rejoindre la discussion</h5>
+        <a href="https://champsdupossible.slack.com/messages" target="_blank" class="waves-effect waves-light btn white bleu-text">Slack &nbsp;<i class="fa fa-slack fa-2x" aria-hidden="true"></i></a>
+      </div>
+      <div class="col l4 s12">
+        <h5 class="white-text">Nous rejoindre</h5>
+        <a class="fb-follow  socialMargin" data-size="large"  data-href="https://www.facebook.com/NopsisNetwork-107871543209717/?ref=bookmarks" data-layout="button_count" data-size="small" data-show-faces="true"></a><br>
+        <a class="twitter-follow-button socialMargin" data-size="large"  href="https://twitter.com/NopsisNetwork"> Suivre @NopsisNetwork</a><br>
+        <a class="g-ytsubscribe" data-channelid="UCv5L5xUOzLhoF06_a6BYeZw" data-layout="default" data-count="default"></a><br>
+        <a class="github-button" href="https://github.com/camjr/nopsis" data-size="large" data-show-count="true" aria-label="Star camjr/nopsis on GitHub">Star</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Copyright © 2017 NOPSIS Network
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
 
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-          </div>
-        </div>
-      </footer>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+
+  <script>
+  // FACEBOOK
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.10";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // TWITTER
+  window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+
+    return t;
+  }(document, "script", "twitter-wjs"));
+
+  // YOUTUBE
+  function onYtEvent(payload) {
+    if (payload.eventType == 'subscribe') {
+      // Add code to handle subscribe event.
+    } else if (payload.eventType == 'unsubscribe') {
+      // Add code to handle unsubscribe event.
+    }
+    if (window.console) { // for debugging only
+      window.console.log('YT event: ', payload);
+    }
+  }
+</script>

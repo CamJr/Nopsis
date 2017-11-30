@@ -1,40 +1,37 @@
-<h1 class="center text">test</h1>
-
-<div class="row">
-  <div class="card in vm.program" id="{{card.id}}"  class="col s3 ">
-    <div class="card">
-      <div class="card-image">
-        <a href="{{vm.pageProgram.img}}"><img ng-src="{{vm.pageProgram.img}}"></a>
+<br>
+<div class="vm.program">
+  <div class="container">
+  <div class="row">
+      <div class="col s6">
+        <a href="{{vm.pageProgram.img}}"><img class="responsive70" ng-src="{{vm.pageProgram.img}}"></a>
       </div>
-    </div>
-    <div class="card-content">
-      <span class="card-title">{{vm.pageProgram.imgText}}</span>
+
+    <div class="col s6 right">
+      <h1 class="center text">{{vm.pageProgram.imgText}}</h1>
       <p>{{vm.pageProgram.imgBio}}</p>
+      <a href="{{vm.pageProgram.href}}">Lien Externe</a><br><br>
+      <!-- <a href="https://champsdupossible.slack.com/messages" target="_blank" class="waves-effect waves-light btn white bleu-text">Rejoindre le projet &nbsp;<i class="fa fa-slack fa-2x" aria-hidden="true"></i></a> -->
+
+
+    <!-- <div class="chip">
+      <a href="/#/team"><img ng-src="{{vm.pageProgram.imgContributor}}" alt="Contact Person"> {{vm.pageProgram.nameContributor}}</a>
+    </div> -->
+
+
     </div>
-    <div class="card-action">
-      <a href="/#/pageProgram/{{vm.pageProgram.id}}">Lien</a>
-    </div>
+
+
   </div>
 </div>
-
-
-
-
-
-
-<!-- <div class="row">
-  <div ng-repeat="card in vm.program" class="col s3 ">
-    <div class="card">
-      <div class="card-image">
-        <a href="{{card.img}}"><img ng-src="{{card.img}}"></a>
-      </div>
-      <div class="card-content">
-        <span class="card-title">{{card.imgText}}</span>
-        <p>{{card.imgBio}}</p>
-      </div>
-      <div class="card-action">
-        <a href="/#/pageProgram{{card.id}}">Lien</a>
-      </div>
-    </div>
-  </div>
-</div> -->
+<div class="carousel black">
+  <!-- <a class="carousel-item"><iframe width="380" height="253" src="https://www.youtube.com/embed/videoseries?list=PLM9mdI816BHQgUFNMVkA3be43FEsQ6nDL&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></a>
+  <a class="carousel-item"><iframe width="380" height="253" src="https://www.youtube.com/embed/videoseries?list=PLzCxunOM5WFLOaTRCzeGrODz8TWaLrbhv&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></a>
+  <a class="carousel-item"><iframe width="380" height="253" src="https://www.youtube.com/embed/videoseries?list=PLM9mdI816BHQgUFNMVkA3be43FEsQ6nDL&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></a>
+  <a class="carousel-item"><iframe width="380" height="253" src="https://www.youtube.com/embed/videoseries?list=PLzCxunOM5WFLOaTRCzeGrODz8TWaLrbhv&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></a>
+  <a class="carousel-item"><iframe width="380" height="253" src="https://www.youtube.com/embed/videoseries?list=PLM9mdI816BHQgUFNMVkA3be43FEsQ6nDL&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></a> -->
+  <a  class="carousel-item" href="{{vm.pageProgram.img1}}"><img style="width="380" height="253"" ng-src="{{vm.pageProgram.img1}}"></a>
+  <a  class="carousel-item" href="{{vm.pageProgram.img2}}"><img style="width="380" height="253"" ng-src="{{vm.pageProgram.img2}}"></a>
+  <a  class="carousel-item" href="{{vm.pageProgram.img3}}"><img style="width="380" height="253"" ng-src="{{vm.pageProgram.img3}}"></a>
+  <a  class="carousel-item" href="{{vm.pageProgram.img4}}"><img style="width="380" height="253"" ng-src="{{vm.pageProgram.img4}}"></a>
+  <a  class="carousel-item" href="{{vm.pageProgram.img5}}"><img style="width="380" height="253"" ng-src="{{vm.pageProgram.img5}}"></a>
+</div>
